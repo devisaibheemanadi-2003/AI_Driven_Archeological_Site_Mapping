@@ -1,0 +1,55 @@
+/* src/styles/DetectionResultCard.css */
+
+.result-card {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: var(--radius);
+  border-top: 5px solid var(--accent);
+  padding: 16px 20px;
+  margin-bottom: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+}
+
+.result-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+}
+
+.result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.result-header h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.confidence {
+  font-size: 1rem;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.progress-bar {
+  background: rgba(255, 255, 255, 0.1);
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 6px;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.4s ease;
+}
+
+.extra-info {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-top: 4px;
+}

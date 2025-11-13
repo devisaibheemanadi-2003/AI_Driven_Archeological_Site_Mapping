@@ -1,0 +1,94 @@
+.veg-detect-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  text-align: center;
+  padding: 24px;
+}
+
+.veg-detect-container h2 {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  color: var(--text);
+}
+
+.loading-text {
+  color: var(--accent);
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+.result-block {
+  margin-top: 32px;
+}
+
+.result-img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 16px;
+}
+
+.json-block {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 16px;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.json-block h4 {
+  margin-bottom: 10px;
+  color: var(--accent);
+}
+
+.json-block ul {
+  list-style: none;
+  padding: 0;
+}
+
+.json-block li {
+  margin: 4px 0;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+/* ==========================
+   Animated Detect Button
+   ========================== */
+.detect-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #00ffff;
+  background: transparent;
+  border: 2px solid #00ffff;
+  border-radius: 8px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  margin-top: 1.5rem;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.detect-btn:hover {
+  background: #00ffff;
+  color: #0a192f;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+  transform: translateX(-50%) scale(1.05);
+}
+
+.detect-btn:active {
+  transform: translateX(-50%) scale(0.98);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+.detect-btn:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 255, 255, 0.7);
+}
